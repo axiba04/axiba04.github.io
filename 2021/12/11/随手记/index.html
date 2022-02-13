@@ -540,7 +540,7 @@
 </ol>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show master status;</span><br></pre></td></tr></table></figure>
 
-<p>   <img src="https://java01-1307122583.cos.ap-nanjing.myqcloud.com/img/image-20211214200332730.png" alt="image-20211214200332730"></p>
+<p>   <img src="https://java01-1307122583.cos.ap-nanjing.myqcloud.com/img/image-20211214200332730.png"></p>
 <p>字段含义：</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">File : 从哪个日志文件开始推送日志文件 </span><br><span class="line">Position ： 从哪个位置开始推送日志</span><br><span class="line">Binlog_Ignore_DB : 指定不需要同步的数据库</span><br></pre></td></tr></table></figure>
 
@@ -557,7 +557,7 @@
 <p>4） 开启同步操作</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">start slave;</span><br><span class="line"></span><br><span class="line">show slave status;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://java01-1307122583.cos.ap-nanjing.myqcloud.com/img/202112121831337.png" alt="1554479387365"></p>
+<p><img src="https://java01-1307122583.cos.ap-nanjing.myqcloud.com/img/202112121831337.png"></p>
 <p>遇到的错误：</p>
 <ul>
 <li><p>因为是直接克隆的linux，所以导致问题：uuid相同，而导致触发此异常</p>
@@ -571,8 +571,8 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">stop slave;</span><br></pre></td></tr></table></figure>
 
 <h1 id="Ubuntu20-04安装docker"><a href="#Ubuntu20-04安装docker" class="headerlink" title="Ubuntu20.04安装docker"></a>Ubuntu20.04安装docker</h1><h2 id="一、更换国内软件源"><a href="#一、更换国内软件源" class="headerlink" title="一、更换国内软件源"></a>一、更换国内软件源</h2><ol>
-<li>打开应用程序页面—&gt;软件和更新<br><img src="https://java01-1307122583.cos.ap-nanjing.myqcloud.com/img/202202041455493.png" alt="在这里插入图片描述"></li>
-<li>在打开页面的下拉框中，选中“其他站点”，点击“选择最佳服务器”<br><img src="https://java01-1307122583.cos.ap-nanjing.myqcloud.com/img/202202041455538.png" alt="在这里插入图片描述"></li>
+<li>打开应用程序页面—&gt;软件和更新<br><img src="https://java01-1307122583.cos.ap-nanjing.myqcloud.com/img/202202041455493.png"></li>
+<li>在打开页面的下拉框中，选中“其他站点”，点击“选择最佳服务器”<br><img src="https://java01-1307122583.cos.ap-nanjing.myqcloud.com/img/202202041455538.png"></li>
 <li>在终端中输入以下命令</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line"></span><br></pre></td></tr></table></figure>
@@ -588,14 +588,14 @@
 <p>中国科技大学的 Docker-ce 源（其他源类似）：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu/gpg | sudo apt-key add -</span><br><span class="line">sudo add-apt-repository <span class="string">&quot;deb [arch=amd64] https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu \</span></span><br><span class="line"><span class="string"><span class="subst">$(lsb_release -cs)</span> stable&quot;</span></span><br><span class="line"><span class="comment">#注意：添加错了可以用以下命令删除</span></span><br><span class="line"><span class="comment">#查询keyid,下图</span></span><br><span class="line">sudo apt-key list</span><br><span class="line"><span class="comment">#keyid 就是90那一串</span></span><br><span class="line">sudo apt-key del &lt;keyid&gt;</span><br><span class="line"><span class="comment">#加参数-r可以移除</span></span><br><span class="line">sudo add-apt-repository -r <span class="string">&quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu <span class="subst">$(lsb_release -cs)</span> stable&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="https://java01-1307122583.cos.ap-nanjing.myqcloud.com/img/202202041455431.png" alt="在这里插入图片描述"><br>更新软件包缓存</p>
+<p><img src="https://java01-1307122583.cos.ap-nanjing.myqcloud.com/img/202202041455431.png"><br>更新软件包缓存</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br></pre></td></tr></table></figure>
 
 <h2 id="四、安装-Docker-ce"><a href="#四、安装-Docker-ce" class="headerlink" title="四、安装 Docker-ce"></a>四、安装 Docker-ce</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install docker-ce</span><br></pre></td></tr></table></figure>
 
 <h2 id="五、测试运行"><a href="#五、测试运行" class="headerlink" title="五、测试运行"></a>五、测试运行</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo docker run hello-world</span><br></pre></td></tr></table></figure>
 
-<p>显示如下就成功了<br><img src="https://java01-1307122583.cos.ap-nanjing.myqcloud.com/img/202202041455459.png" alt="在这里插入图片描述"></p>
+<p>显示如下就成功了<br><img src="https://java01-1307122583.cos.ap-nanjing.myqcloud.com/img/202202041455459.png"></p>
 <h2 id="六、添加当前用户到-docker-用户组，可以不用-sudo-运行-docker"><a href="#六、添加当前用户到-docker-用户组，可以不用-sudo-运行-docker" class="headerlink" title="六、添加当前用户到 docker 用户组，可以不用 sudo 运行 docker"></a>六、添加当前用户到 docker 用户组，可以不用 sudo 运行 docker</h2><p>将当前用户添加到 docker 组</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gpasswd -a <span class="variable">$&#123;USER&#125;</span> docker</span><br></pre></td></tr></table></figure>
 
@@ -610,7 +610,7 @@
 
 <h1 id="Ubuntu20-04-安装-jdk8"><a href="#Ubuntu20-04-安装-jdk8" class="headerlink" title="Ubuntu20.04 安装 jdk8"></a>Ubuntu20.04 安装 jdk8</h1><p>下载对应的 jdk8</p>
 <p>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1gx5Gln0uIjqaHVTAkpPPrA">https://pan.baidu.com/s/1gx5Gln0uIjqaHVTAkpPPrA</a><br>提取码：0822 </p>
-<p>在 <a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=ubuntu&spm=1001.2101.3001.7020">ubuntu</a> 中 新建 一个 jdk8 目录</p>
+<p>在 ubuntu 中 新建 一个 jdk8 目录</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir jdk1<span class="number">.8</span></span><br></pre></td></tr></table></figure>
 
 <p>解压</p>
